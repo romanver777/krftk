@@ -1,0 +1,60 @@
+.sidebar {
+  position: fixed;
+  width: fit-content;
+  height: 48px;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  right: 0;
+  z-index: 2;
+}
+
+.buttons__list {
+  background-color: var(--color-white);
+  border-radius: 14px;
+  padding: 8px;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  margin: 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.buttons__item {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+}
+
+.button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: var(--color-gray-hover);
+}
+
+.button_active {
+  background-color: var(--color-active-blue);
+}
+
+.button_active:hover {
+  background-color: var(--color-active-blue);
+}
+
+.downLayer {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
