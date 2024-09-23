@@ -7,11 +7,11 @@ type TProps = {
   items: TFigure[];
   active: string | null;
   onClose: () => void;
-  onActive: (nam: string) => void;
+  onActive: (name: "rect" | "line" | "ellipse") => void;
 };
 
 const DropDown = ({ items, active, onClose, onActive }: TProps) => {
-  const handleAction = (name: string) => {
+  const handleAction = (name: "rect" | "line" | "ellipse") => {
     onActive(name);
     onClose();
   };

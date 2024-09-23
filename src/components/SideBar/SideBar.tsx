@@ -9,7 +9,7 @@ import EllipseIcon from "../../assets/icons/ellipse.svg?react";
 import DropDown from "../DropDown/DropDown";
 
 export type TFigure = {
-  name: string;
+  name: "rect" | "line" | "ellipse";
   icon: React.ReactNode;
 };
 
