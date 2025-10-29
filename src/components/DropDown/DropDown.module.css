@@ -31,6 +31,7 @@
   transition: 0.3s;
   border-radius: 8px;
   padding: 8px 12px;
+  color: var(--color-black);
 }
 
 .dropDown__svgWrap {
@@ -39,6 +40,11 @@
 }
 
 .dropDown__btn:hover {
+  color: var(--color-white);
   background-color: var(--color-active-blue);
   transition: 0.3s;
+}
+
+.dropDown__btn:hover svg {
+  fill: var(--color-white);
 }
