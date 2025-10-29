@@ -23,9 +23,7 @@ const DropDown = ({ items, active, onClose, onActive }: TProps) => {
           {items.map((item, index) => (
             <li key={index} className={styles.dropDown__item}>
               <button
-                className={cn(styles.dropDown__btn, {
-                  [styles.dropDown__btn_active]: active === item.name,
-                })}
+                className={styles.dropDown__btn}
                 onClick={() => handleAction(item.name)}
               >
                 {item.name}
