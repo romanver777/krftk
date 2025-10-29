@@ -1,4 +1,3 @@
-import cn from "classnames";
 import { TFigure } from "../SideBar/SideBar";
 import CheckIcon from "../../assets/icons/check.svg?react";
 import styles from "./DropDown.module.css";
